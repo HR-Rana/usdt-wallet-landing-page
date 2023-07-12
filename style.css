@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@700&family=Roboto:wght@400;500;700&display=swap');
+
+
+
+
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --brwon: brown;
+    --primary: rgb(0, 0, 178);
+    --black: black;
+    --white: white;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 700;
+}
+
+.Show-display {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, .85), rgba(0, 0, 0, .93)), url('./Images/banner1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.Show-display h1 {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+
+.contact-section img {
+    width: 100%;
+
+}
+
+.images-section {
+    margin: 35px 0;
+}
+
+.images-section h4 {
+    font-size: 26px;
+    letter-spacing:1px;
+    position: relative;
+    font-family: 'roboto';
+}
+
+.images-section h4 span {
+    color: var(--primary);
+}
+
+.images-section h4::after {
+    content: " ";
+    background-color: var(--brwon);
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 10px;
+}
+
+.images-section .col-12.chart {
+    width: 100%;
+    height: 100%;
+    margin: 25px 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .25);
+    padding: 25px;
+}
+
+.images-section .col-12.chart button {
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    margin: 25px auto;
+    padding: 8px;
+    outline: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px dashed var(--primary);
+    transition: .4s;
+    letter-spacing: 1px;
+
+    border-radius: 7px;
+}
+
+.images-section .col-12.chart img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.images-section .col-12.chart button:hover {
+    background-color: transparent;
+    color: var(--black);
+}
+
+
+
+.wallet-area {
+    width: 100% !important;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .25);
+    margin: 0;
+    padding: 25px;
+}
+
+.wallet-area p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.wallet-area .wallet-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+.wallet-area .copy-input {
+    margin-top: 25px;
+}
+
+.wallet-area .copy-input h5 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Roboto';
+}
+
+.wallet-area .copy-input span {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    display: flex;
+}
+
+.wallet-area .copy-input i {
+    position: relative;
+    font-size: 25px;
+    border-left: 1px solid rgb(185, 185, 185);
+    padding: 5px;
+    padding-left: 10px;
+    left: -45px;
+    color: var(--primary);
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+}
+/* 
+.wallet-area .copy-input i::after {
+    content: "Copied";
+    display: flex;
+    width: 60px;
+    height: 30px;
+    background-color: brown;
+    color: var(--white);
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 10px;
+    text-transform: capitalize !important;
+    letter-spacing: 1px;
+    position: absolute;
+    top: -35px;
+    right: 0px;
+    align-items: center;
+    justify-content: center;
+   display: none;
+}
+
+.wallet-area #walletInput.active .copy-input i::after{
+    display: block;
+} */
+
+
+.wallet-area .copy-input input {
+    position: relative !important;
+    border-radius: 5px;
+    width: 100% !important;
+    background-color: rgb(236, 236, 236);
+    border: none;
+    padding: 8px;
+
+}.wallet-area .copy-input input:focus {
+   outline: none;
+   border: none;
+   cursor: copy;
+   border: none;
+}
+
+.wallet-area .USDT-img {
+    text-align: center;
+}
+
+.wallet-area .USDT-img img {
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+.contact-section {
+    margin: 50px 0;
+}
+
+.contact-section h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.contact-section .contact-img img {
+    width: 80%;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.contact-section .email-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+}
+
+.contact-section .email-box span img {
+    width: 80px;
+    height: 80px;
+}
+
+.contact-section .email-box p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact-section .email-box p span {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--brwon);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:992px) {
+    .images-section .col-12.chart button {
+        width: 35%;
+    }
+}
+
+
+@media (max-width:768px) {
+    .Show-display h1 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .images-section .col-12.chart {
+        margin: 25px 0px;
+       
+    }
+    .images-section .col-12.chart img {
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
+    }
+
+    .contact-section .contact-img img {
+        width: 100%;
+    }
+
+    .images-section .col-12.chart button {
+        width: 50%;
+    }
+    .wallet-area .wallet-box {
+        margin-top:0px;
+        margin: 25px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:576px) {
+    .Show-display h1 {
+        font-size: 28px;
+        font-weight: 500;
+        font-family: 'roboto';
+        line-height: 40px;
+    }
+    .images-section .col-12.chart button {
+        width: 60%;
+        font-size: 13px;
+    }
+    .contact-section h3 {
+        font-family: "roboto";
+        font-weight: 600;
+    }
+}

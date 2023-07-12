@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+
+    <section class="Show-display">
+        <div class="container">
+            <h1>Always show display Popup notification..</h1>
+        </div>
+    </section>
+
+    <section class="images-section">
+        <div class="container">
+            <h4>MT<span>5</span></h4>
+            <div class="row">
+                <div class="col-12 chart">
+                    <img src="./Images/new.PNG" alt="Image" class="img-fluid">
+                    <button>1month for 120$ </button>
+                </div>
+                <div class="col-12 chart">
+                    <img src="./Images/252525.PNG" alt="Image" class="img-fluid">
+                    <button> Life time 249$ </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="wallet-area">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="wallet-box">
+                        <span>
+                            <p>
+                                Our system is too powerful if it doesn't work Then we will refund your money.Its
+                                accuracy is
+                                90%.</p>
+                        </span>
+                        <div class="copy-input">
+                            <h5>Let's Get Our Wallet</h5>
+                            <span>
+                                <input type="text" id="walletInput" value="TN872wVTcVq5HNXX6F2WJWuTCVNCsxDBHa"
+                                    class="walletInput col-12">
+                                <i class="fa-solid fa-copy" id="btnCopy" title="copy this link"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 USDT-img">
+                    <img src="./Images/USDT Image.png" alt="usdt" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <h3>get in touch</h3>
+
+            <div class="row">
+                <div class="col-md-6 col-12 contact-img">
+                    <img src="./Images/Get in touch-bro (1).png" alt="get in touch" class="img-fluid">
+                </div>
+                <div class="col-md-6 col-12 email-box">
+                    <span>
+                        <img src="./Images/envelope-svgrepo-com.svg" alt="email-icon" class="img-fluid">
+                    </span>
+                    <p><span>Email :</span> Forexinticetor@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var input = document.getElementById("walletInput");
+        var button = document.getElementById('btnCopy');
+        var successText = document.getElementsByName('.')
+
+        button.addEventListener('click', function () {
+            input.select();
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            setTimeout(function () {
+                alert("this Link Copied successfully....✅✅")
+            }, 600)
+
+        });
+
+    </script>
+</body>
+
+</html>
